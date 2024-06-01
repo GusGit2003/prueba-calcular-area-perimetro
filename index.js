@@ -3,8 +3,8 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const misrutas = require("./routes/rutas");
 
-const app = express(); //Crear al servidor
-const port = process.env.PORT || 3000;
+const app = express(); // Crear al servidor
+const port = process.env.PORT || 3000; 
 
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));

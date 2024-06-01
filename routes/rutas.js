@@ -11,7 +11,7 @@ router.get('/', function(req, res) {
   res.sendFile(process.cwd() + '/public/index.html');
 });
 
-router.get("/ayuda", (req, res) => {
+router.get(process.cwd()+"/ayuda", (req, res) => {
   res.send({
     message: "¿En qué te ayudo? Soy Gustavo Adolfo Avendaño Guevara",
   });
